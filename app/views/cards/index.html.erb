@@ -9,7 +9,7 @@
       deck << "#{card}_of_#{suit}"
     end
   end
-  shuffled_deck = deck.shuffle[0,5]
+  shuffled_deck = deck.sample(5)
 %>
 
 <p>
