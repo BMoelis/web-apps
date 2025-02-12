@@ -9,8 +9,9 @@
       deck << "#{card}_of_#{suit}"
     end
   end
-  shuffled_deck = deck.sample(5)
+  shuffled_deck = deck.sample(7)
 %>
+<!-- 100 cards would require 2 decks, which would imply that cards HAVE to be duplicated, so we'd switch back from deck.sample to deck.shuffle -->
 
 <p>
   <% for card in shuffled_deck %>
